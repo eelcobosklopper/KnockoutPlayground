@@ -1,0 +1,25 @@
+{
+  "name": "knockoutplayground",
+  "version": "1.0.0",
+  "description": "A place to tryout Knockout stuff",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build-css": "node-sass --include-path scss src/sass/main.scss src/public/css/main.css",
+    "watch": "nodemon -e scss -x \"npm run build-css\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dhrstoff/KnockoutPlayground.git"
+  },
+  "author": "Eelco Bosklopper",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dhrstoff/KnockoutPlayground/issues"
+  },
+  "homepage": "https://github.com/dhrstoff/KnockoutPlayground#readme",
+  "devDependencies": {
+    "node-sass": "^3.13.0",
+    "nodemon": "^1.11.0"
+  }
+}
