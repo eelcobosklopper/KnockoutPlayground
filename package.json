@@ -19,7 +19,7 @@
   },
   "homepage": "https://github.com/dhrstoff/KnockoutPlayground#readme",
   "devDependencies": {
-    "node-sass": "^3.13.0",
+    "node-sass": "^3.13.1",
     "nodemon": "^1.11.0"
   }
 }

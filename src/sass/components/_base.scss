@@ -1,4 +1,38 @@
 body {
   margin: 0;
-  background-color: $mainBackground;
+  // background-color: $mainBackground;
+}
+
+button {
+
+    .btn-loading {
+
+    }
+
+}
+
+button[disabled] {
+    margin-right:30px;
+
+    &:after {
+        content: '';
+        background: url(../img/spinnersmall.gif) no-repeat center center;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+        height:20px;
+        width:20px;
+        position: absolute;
+        margin-left: 20px;
+    }
+}
+
+.spinner {
+    height:100px;
+    width:100px;
+    background:blue;
+
+
+
 }
