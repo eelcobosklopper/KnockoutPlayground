@@ -3,14 +3,6 @@ body {
   // background-color: $mainBackground;
 }
 
-button {
-
-    .btn-loading {
-
-    }
-
-}
-
 button[disabled] {
     margin-right:30px;
 
@@ -28,11 +20,23 @@ button[disabled] {
     }
 }
 
-.spinner {
-    height:100px;
-    width:100px;
-    background:blue;
+.loader {
+    @include transition(visibility 0.4s ease-in-out, opacity 0.4s ease-in-out);
 
+    background: white url(../img/loading.gif) no-repeat center center;
+    bottom:0;
+    height:100%;
+    left:0;
+    opacity: 0;
+    position: fixed;
+    right:0;
+    top:0;
+    visibility: hidden;
+    width:100%;
+    z-index:2000;
 
-
+    &.loadervisible {
+        opacity: .5;
+        visibility: visible;
+    }
 }
